@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Personaje
 {
-    internal interface IMoverse
+    public interface IMoverse
     {
         int MoverseEjeY();
         int MoverseEjeX();

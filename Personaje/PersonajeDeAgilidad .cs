@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Personaje
 {
-    internal class PersonajeDeAgilidad : Personaje
+    public class PersonajeDeAgilidad : Personaje
     {
         public PersonajeDeAgilidad(string nombre, int fuerza, int agilidad, int magia)
         {
@@ -21,10 +21,6 @@ namespace Personaje
             return ((Fuerza / 2) * ((Agilidad * Magia) / 2));
         }
 
-        public override string Atacar(string nombre, int danio)
-        {
-            return base.Atacar(nombre, CalcularDanio());
-        }
 
         public override int MoverseEjeX()
         {

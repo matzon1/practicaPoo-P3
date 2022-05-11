@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Personaje
 {
-    internal class PersonajeDeFuerza : Personaje
+    public class PersonajeDeFuerza : Personaje
     {
         public PersonajeDeFuerza(string nombre,int agilidad, int magia)
         { 
@@ -30,3 +30,4 @@ namespace Personaje
             return 2;
         }
     }
+}

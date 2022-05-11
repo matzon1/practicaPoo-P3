@@ -6,16 +6,20 @@ using System.Threading.Tasks;
 
 namespace Personaje
 {
-    internal class Turno
+    public class Turno
     {
         public static void Atacarse(IList<Personaje> personajes)
         {
-            return personajes.Select(x => x.Atacar(y, y)).ToList();
+            foreach (var person in personajes)
+            {
+                person.Atacar();
+            }
         }
 
         public static void MoverFichas(IMoverse ficha)
         {
-
+            ficha.MoverseEjeX();
+            ficha.MoverseEjeY();
         }
     }
 }

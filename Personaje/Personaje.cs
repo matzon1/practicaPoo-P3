@@ -16,9 +16,9 @@ namespace Personaje
 
         public abstract int CalcularDanio();
 
-        public virtual string Atacar(string nombre, int danio)
+        public virtual void Atacar()
         {
-            return $"{nombre} hizo {danio} de daño";
+            Console.WriteLine($"{Nombre} hizo {CalcularDanio()} de daño");
         }
 
         public abstract int MoverseEjeX();
